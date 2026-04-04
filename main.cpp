@@ -21,12 +21,11 @@ int main() {
         int x;
     do {
 
-        cout<<"input 1 - 2 - 3:"<<endl;
+        cout<<"input 1 - 2 - 3 - 4:"<<endl;
         cin>>x;
 
 
-
-
+        vvv
     }while(true);
 
 
