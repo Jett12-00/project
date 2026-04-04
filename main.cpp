@@ -25,7 +25,6 @@ int main() {
         cin>>x;
 
 
-        vvv
     }while(true);
 
 
