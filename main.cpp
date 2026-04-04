@@ -5,27 +5,10 @@ int main() {
 
 
 
-    for (int i = 0; i < 10; i++) {
+    for (int i = 5; i <=100; i++) {
         cout << i << endl;
         continue;
     }
-
-    int i =5;
-    while (i<=5) {
-        cout << i << endl;
-        i++;
-        break;
-    }
-
-
-        int x;
-    do {
-
-        cout<<"input 1 - 2 - 3 - 4:"<<endl;
-        cin>>x;
-
-fsafasfasfasfasfsaf
-    }while(true);
 
 
 
