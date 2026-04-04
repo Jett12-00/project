@@ -24,7 +24,7 @@ int main() {
         cout<<"input 1 - 2 - 3 - 4:"<<endl;
         cin>>x;
 
-
+fsafasfasfasfasfsaf
     }while(true);
 
 
