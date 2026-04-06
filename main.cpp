@@ -1,28 +1,39 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    system("clear");
-    cout<<"\n =============<<Menu>>============"<<endl;
-    cout<<"1. Calculator Program "<<endl;
-    cout<<"2. Salary Finder "<<endl;
-    cout<<"3. Exit "<<endl;
-    int option;
-    cout<<"Choose your option(1-3): ";
-    cin>>option;
-    switch(option) {
-        case 1:
-            cout<<"You choose : Calculator "<<endl;
+
+int main() {
+    double num1, num2;
+    char op;
+
+    cout << "===== Simple Calculator =====" << endl;
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter operator (+, -, *, /): ";
+    cin >> op;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    switch(op) {
+        case '+':
+            cout << "Result: " << num1 + num2 << endl;
             break;
-        case 2:
-            cout<<"You choose salary Finder "<<endl;
+        case '-':
+            cout << "Result: " << num1 - num2 << endl;
             break;
-        case 3:
-            cout<<"Exit from program!"<<endl;
+        case '*':
+            cout << "Result: " << num1 * num2 << endl;
+            break;
+        case '/':
+            if(num2 != 0)
+                cout << "Result: " << num1 / num2 << endl;
+            else
+                cout << "Error: Division by zero!" << endl;
             break;
         default:
-            cout<<"Invalid option!! Choose again from 1-3 "<<endl;
-            // need to add break here too
-            break;
+            cout << "Invalid operator!" << endl;
     }
-    return 0 ;
+
+    return 0;
 }
