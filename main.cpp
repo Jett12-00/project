@@ -5,7 +5,7 @@ int main() {
     double num1, num2;
     char op;
 
-    cout << "===== Simple Calculator =====" << endl;
+    cout << "===== Calculator =====" << endl;
     cout << "Enter first number: ";
     cin >> num1;
 
@@ -34,6 +34,5 @@ int main() {
         default:
             cout << "Invalid operator!" << endl;
     }
-
     return 0;
 }
