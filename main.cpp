@@ -2,38 +2,21 @@
 using namespace std;
 
 int main() {
-    double num1, num2;
-    char op;
+    int number;
 
-    cout << "===== Calculator =====" << endl;
-    cout << "Enter first number: ";
-    cin >> num1;
+    while (true) {
+        cout << "\nEnter a number (0 to exit): ";
+        cin >> number;
 
-    cout << "Enter operator (+, -, *, /): ";
-    cin >> op;
-
-    cout << "Enter second number: ";
-    cin >> num2;
-
-
-    switch(op) {
-        case '+':
-            cout << "Result: " << num1 + num2 << endl;
+        if (number == 0)
             break;
-        case '-':
-            cout << "Result: " << num1 - num2 << endl;
-            break;
-        case '*':
-            cout << "Result: " << num1 * num2 << endl;
-            break;
-        case '/':
-            if(num2 != 0)
-                cout << "Result: " << num1 / num2 << endl;
-            else
-                cout << "Error: Division by zero!" << endl;
-            break;
-        default:
-            cout << "Invalid operator!" << endl;
+
+        if (number % 2 == 0)
+            cout << "Even number" << endl;
+        else
+            cout << "Odd number" << endl;
     }
+
+    cout << "Program ended!" << endl;
     return 0;
 }
